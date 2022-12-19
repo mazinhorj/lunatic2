@@ -1,0 +1,82 @@
+@charset "UTF-";
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+:root {
+    color-scheme: dark light;
+    --color-text: black;
+    --color-background: white;
+    --color-header: #dddddd;
+    --color-footer: #afafaf;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: white;
+        --color-background: #444;
+        --color-header: #333;
+        --color-footer: #333;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Moon Dance', Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+header {
+    height: 16vh;
+    background-color: var(--color-header);
+    margin-bottom: 1.4rem;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.cotainer {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.image-container {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-header);
+}
+
+.image-container img {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto 1rem;
+    width: 1000px;
+    height: 600px;
+}
+
+.image-container h2 {
+    font-size: 2rem;
+}
+
+footer {
+    height: 20vh;
+    background-color: var(--color-footer);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--color-text);
+}
